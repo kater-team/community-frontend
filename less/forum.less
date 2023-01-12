@@ -125,7 +125,6 @@
     }
 
     &-info {
-        display: grid;
 
         .item {
             &-discussion-votes {
@@ -188,5 +187,128 @@
     // 暂时不显示 实际要区分 是不是kater 拓展
     .AfruxWidgets-sideNavAlt {
         display: none;
+    }
+}
+
+
+/**flarum-info*/
+.Kater-flaruminfo {
+    .AfruxWidgets-Widget-content {
+        padding: unset;
+        width: 300px;
+    }
+
+    .kater-copyright {
+        padding: 16px 36px 13px 20px;
+
+        .copyright-main {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .Info {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            gap: 24px;
+
+            width: 244px;
+            height: 22px;
+
+            .title {
+                width: 52px;
+                height: 22px;
+
+                font-family: 'HelloFont WenYiHei';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 17.28px;
+                line-height: 22px;
+                /* identical to box height */
+
+                /* 姓名&标签色 */
+                color: #39393B;
+            }
+
+            .assist {
+                width: 168px;
+                height: 17px;
+
+                font-family: 'PingFang SC';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 17px;
+                /* identical to box height */
+
+
+                /* 辅助文字色 */
+                color: #5C6573;
+            }
+
+
+
+
+        }
+
+        .Info-link {
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 20px;
+            column-gap: 6px;
+
+            font-family: 'PingFang SC';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+
+            /* 姓名&标签色 */
+            color: #39393B;
+        }
+
+        .Info-contact {
+            display: flex;
+            flex-direction: column;
+
+            font-family: 'PingFang SC';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+
+            /* 次要文字&提示信息色 */
+
+            color: #9DA2A5;
+        }
+
+        .Info-tool {
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 20px;
+            column-gap: 32px;
+
+            font-family: 'PingFang SC';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+
+            color: #9DA2A5;
+
+            .hasIcon {
+                border: unset;
+                display: inline-flex;
+                align-items: center;
+                background: unset;
+
+                .Button-icon {
+                    font-size: 22px;
+                }
+            }
+        }
     }
 }
