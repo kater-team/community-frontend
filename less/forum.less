@@ -1,0 +1,192 @@
+/*测试部分**/
+// .sideNavContainer {
+//     background: aqua;
+
+//     .sideNav {
+//         background: red;
+//     }
+
+//     .sideNavOffset {
+//         background: green;
+//     }
+
+//     .AfruxWidgets-sideNavAlt {
+//         background: #fdb343;
+//     }
+// }
+
+.DiscussionListItem {
+
+    // border: 1px solid;
+    // background: green;
+    &-count {
+        display: none;
+    }
+
+    .item-replyCountItem {
+        margin-left: 5px;
+
+        .DiscussionListItem-count {
+            display: unset;
+            float: unset;
+            margin-right: unset;
+
+            &::before {
+                float: unset;
+                margin-right: 8px;
+                margin-top: unset;
+            }
+        }
+    }
+}
+
+
+/** 模块插件通用*/
+.AfruxWidgets-Widget-content {
+    background: unset;
+    padding: 3px 20px;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        position: relative;
+
+        li {
+            padding-top: 6px;
+        }
+
+        .klink {
+            color: #141B29;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+}
+
+
+/*清理*/
+.AfruxWidgets-Widget-title {
+    color: unset;
+}
+
+.AfruxWidgets-sideNavAlt {
+    margin: unset;
+}
+
+.sideNavOffset {
+    margin: unset;
+}
+
+.sideNav {
+    // position: fixed;
+
+    // position: absolute;
+    // left: 0px;
+
+    position: sticky;
+    top: 53px;
+    height: 100%;
+    margin: unset;
+}
+
+/* 全局变量*/
+@border-radius: 2px;
+
+.Button {
+    color: #191919;
+    background: unset;
+}
+
+
+
+.IndexPage-toolbar {
+    margin: 14px 32px;
+}
+
+.DiscussionListItem {
+    padding: 24px 32px;
+    margin: unset;
+
+    &-title {
+        height: 25px;
+        line-height: 25px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    &-main {
+        padding: unset
+    }
+
+    &-author {
+        margin-top: unset;
+    }
+
+    &-info {
+        display: grid;
+
+        .item {
+            &-discussion-votes {
+                position: unset
+            }
+
+            &-excerpt {}
+
+            &-terminalPost {}
+        }
+
+    }
+}
+
+
+/**
+* 左侧框 
+* > 1440 300
+* 1440 -1024  240
+* < 1024 64
+*/
+
+.container {
+    width: unset;
+    max-width: 1440px;
+}
+
+
+@media screen and (min-width: 1440px) {
+
+    .sideNav {
+        width: 300px;
+    }
+
+    .AfruxWidgets-sideNavAlt {
+        width: 300px;
+    }
+
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+
+    .sideNav {
+        width: 240px;
+    }
+
+    .AfruxWidgets-sideNavAlt {
+        width: 240px;
+    }
+}
+
+@media screen and (min-width: 680px) and (max-width: 1024px) {
+
+
+    .sideNav {
+        width: 72px;
+    }
+
+    // 暂时不显示 实际要区分 是不是kater 拓展
+    .AfruxWidgets-sideNavAlt {
+        display: none;
+    }
+}

@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Kater\\CommunityFrontend;
+namespace Kater\CommunityFrontend;
 
 use Flarum\Extend;
 

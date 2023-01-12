@@ -1,5 +1,8 @@
 import app from 'flarum/common/app';
 
-app.initializers.add('kater/community-frontend', () => {
-  console.log('[kater/community-frontend] Hello, forum and admin!');
+import registerWidget from "../widgets/registerWidget";
+
+app.initializers.add('afrux/kater-community-frontend', () => {
+  console.log('[frux/kater-community-frontend] Hello, common!');
+  registerWidget()
 });
